@@ -44,6 +44,9 @@
 }
 
 @layer utilities {
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
 
   .heading {
     @apply uppercase bg-black px-6 py-3 font-extrabold text-white max-w-5xl text-center sm:text-lg md:text-xl lg:text-2xl;
@@ -65,6 +68,50 @@
   .search-btn {
     @apply size-8 rounded-full bg-black text-lg flex justify-center items-center;
   }
+
+  .section_container {
+    @apply px-6 py-16 max-w-7xl mx-auto;
+  }
+
+  .card_grid {
+    @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+  }
+
+  .card_grid-sm {
+    @apply grid sm:grid-cols-2 gap-5;
+  }
+
+  .no-result {
+    @apply text-sm font-normal;
+  }
+
+
+  /* Startup Card */
+  .startup-card {
+    @apply bg-white border-1 py-6 px-5 rounded-md shadow-sm hover:border-b-zinc-300 transition-all duration-300 hover:shadow-lg hover:bg-zinc-100;
+  }
+
+  .startup-card_date {
+    @apply font-medium text-sm py-2 rounded-full;
+  }
+
+  .startup-card_desc {
+    @apply font-normal text-lg line-clamp-2 my-3 text-black break-all;
+  }
+
+  .startup-card_img {
+    @apply w-full h-[164px] rounded-[10px] object-cover;
+  }
+
+  .startup-card_btn {
+    @apply rounded-full bg-black font-medium text-lg text-white px-5 py-3;
+  }
+
+  .startup-card_skeleton {
+    @apply w-full h-96 rounded-[22px] bg-zinc-400;
+  }
+
+
 }
 
 :root {
