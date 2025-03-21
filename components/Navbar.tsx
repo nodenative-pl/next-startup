@@ -17,7 +17,7 @@ async function Navbar() {
                 <div className="flex gap-5 text-black">
                     {session && session?.user
                         ? <>
-                            <Link href={`/startup/create}`}>
+                            <Link href='/startup/create'>
                                 <span>Create</span>
                             </Link>
                             <form action={async () => {
